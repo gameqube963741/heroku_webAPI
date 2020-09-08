@@ -3,3 +3,5 @@ pip install flask
 
 取得台中資料
 ![](./demo_images/taichung.png)
+取得台北資料
+![](./demo_images/taipei.png)
