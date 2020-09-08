@@ -1,5 +1,6 @@
 # Flask web API 取得台灣氣象局公開資料
 ##### pip install flask
+weather.py
 
 取得台中資料
 ![](./demo_images/taichung.png)
@@ -18,9 +19,9 @@ git config --global user.email"user e-mail"
 3.create new app
 ![](./demo_images/create_new_app.png)
 
-pip install flask
-pip install gunicorn
-pip install requests
+###### pip install flask
+###### pip install gunicorn
+###### pip install requests
 ##### pip list
 ![](./demo_images/pip_list.png)
 
@@ -38,3 +39,10 @@ pip install requests
 ![](./demo_images/procfile.png)
 
 # Push to Heroku
+1. (*)heroku login 
+2. git init
+3. heroku git:remote -a app-name_on_heroku
+4. (*)git add . 
+5. (*)git commit -m 'msg'
+6. (*)git push heroku master
+##### (*)更新程式使用
