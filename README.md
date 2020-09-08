@@ -26,10 +26,13 @@ pip install requests
 
 # Heroku 必須包含
 1. requirements.txt
+
 ![](./demo_images/requirements.png)
-2. runtime.txt
+2. runtime.txt 
+
 ![](./demo_images/runtime.png)
 3. Procfile
+
 ![](./demo_images/procfile.png)
 
 # Push to Heroku
