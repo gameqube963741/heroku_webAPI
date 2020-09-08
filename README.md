@@ -46,3 +46,6 @@ git config --global user.email"user e-mail"
 5. (*)git commit -m 'msg'
 6. (*)git push heroku master
 ##### (*)更新程式使用
+
+# heroku 呈現資料
+![](./demo_images/herokudata.png)
