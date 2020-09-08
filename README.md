@@ -49,3 +49,5 @@ git config --global user.email"user e-mail"
 
 # heroku 呈現資料
 ![](./demo_images/herokudata.png)
+
+# https://weatherflaskapi.herokuapp.com/weather/%E5%BD%B0%E5%8C%96
