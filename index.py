@@ -1,10 +1,11 @@
 from tkinter import *
+from tkinter.ttk import *
 import requests
 
 def showWeather(event):  #下拉選單選取選項後執行的程式
     city = cbVar.get()  #使用者選取的選項
     if city != '請選擇：':  #選擇縣市
-        report = requests.get('https://weathflask.herokuapp.com/weather/' + city).text  #取得Web API資料
+        report = requests.get('https://weatherflaskapi.herokuapp.com/weather/' + city).text  #取得Web API資料
         jsondata = eval(report)  #轉換為字典
         showdata = city + ' 天氣資料：\n'
         showdata += '天氣狀況：' + jsondata['天氣狀況'] + '\n'
@@ -17,7 +18,7 @@ def showWeather(event):  #下拉選單選取選項後執行的程式
         labelVar.set('請選擇縣市！')
 
 win = Tk()
-win.title('縣市天氣資料')
+win.title('天氣資料')
 win.geometry('300x350')
 
 cbVar = StringVar()
@@ -28,7 +29,7 @@ cb.bind('<<ComboboxSelected>>', showWeather)  #設定選取選項後執行的程
 cb.place(x=70, y=15)
 
 labelVar = StringVar()  
-labelShow = Label(win, foreground='red', justify='left', textvariable=labelVar)  #標籤元件
+labelShow = Label(win, foreground='white', justify='left', textvariable=labelVar)  #標籤元件
 labelVar.set('尚未選擇縣市！')
 labelShow.place(x=80, y=220)
 

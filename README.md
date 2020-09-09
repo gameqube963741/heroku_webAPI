@@ -48,6 +48,11 @@ git config --global user.email"user e-mail"
 ##### (*)更新程式使用
 
 # heroku 呈現資料
+
 ![](./demo_images/herokudata.png)
+
+# 使用tkinter combobox下拉式元件 呈現 weather app
+
+![](./demo_images/tk_weather.png)
 
 # https://weatherflaskapi.herokuapp.com/weather/%E5%BD%B0%E5%8C%96
